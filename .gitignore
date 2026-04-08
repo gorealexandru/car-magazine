@@ -1,0 +1,49 @@
+# Core
+# ----------------------------------------------------------------------------
+/vendor/
+/web/core/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
+/web/libraries/
+
+# Site-specific configuration and files
+# ----------------------------------------------------------------------------
+/web/sites/*/settings.php
+/web/sites/*/settings.local.php
+/web/sites/*/services.yml
+/web/sites/*/services.local.yml
+
+# Personal/Sensitive Files
+# ----------------------------------------------------------------------------
+.env
+.env.local
+
+# Files/Directories to ignore in the public files directory
+# ----------------------------------------------------------------------------
+/web/sites/*/files/
+/web/sites/*/private/
+
+# If you want to keep the directory but ignore the content:
+# !/web/sites/default/files/.gitkeep
+
+# Simpletest and PHPUnit artifacts
+# ----------------------------------------------------------------------------
+/web/sites/simpletest/
+browser_output/
+
+# IDEs, OS, and localized files
+# ----------------------------------------------------------------------------
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Drush
+# ----------------------------------------------------------------------------
+/drush/sites/*.site.yml
+
+# Compiled assets (if using Sass/Tailwind/Webpack)
+# ----------------------------------------------------------------------------
+/web/themes/custom/*/node_modules/
+/web/themes/custom/*/dist/
